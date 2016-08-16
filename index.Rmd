@@ -1,0 +1,39 @@
+---
+title: "Reports for DINA-Web"
+author: "Roger Wilco"
+date: "July 26, 2016"
+output: bookdown::gitbook
+site: bookdown::bookdown_site
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Reporting in DINA-Web using markdown
+
+```{r}
+
+```
+
+The `dinar` R-package provides ways and means for working with DINA-Web data - Natural History Collections for the Web - using R to access the DINA-Web REST APIs. 
+
+Combining `dinar` with other R-packages such as `rmarkdown`, `knitr`, `bookdown` provides functionaly to provide reports based on DINA-Web data. 
+
+Output includes both reproducible static canned reports as well as live reports that embed interative content and cover formats such as HTML, PDF and EPUB.
+
+## Compiling books with bookdown
+
+This content is a `bookdown` report that compiles several markdown files together and specifically demonstrate fetching data with `dinar` and authoring a markdown report with QR codes.
+
+## Writing journal articles etc
+
+Instead of `bookdown` the same approach as demonstrated here - ie fetching data with `dinar` and authoring reports - can utilize `rticles` - a package which allows producing articles in formats that adhere to various guidelines required from various journals (JSS, CTeX, R Journal, ACM articles, ACS articles, Elsevier etc)...
+
+## More details
+
+An excellent webinar is available to provide a quick-start tutorial for the `bookdown` package and content authoring using markdown:
+
+- [Webinar about Bookdown](https://www.rstudio.com/resources/webinars/?mkt_tok=eyJpIjoiT0dJMU9EYzBZekUyTldFNCIsInQiOiJtRkJCajB2VlY0a00waGRpbVZDdVkwOVB4TUowcThORlg2SGZLeGZRWHZmNWU3NGNFcU9CUXZjYjNoRUozbmFWWEMrNEVOZ2lLRUpTWlwvcW5yaFBwNUVpT2RcLzI4eUxocnVhbmRvUkxwSDM0PSJ9)
+
+

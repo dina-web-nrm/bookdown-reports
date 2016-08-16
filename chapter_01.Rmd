@@ -1,0 +1,59 @@
+# QR codes for Collection Objects
+
+A QR code can lead to any URL. For sets of Collection Objects with known identifiers - provided from `dinar`, etiquettes and labels with QR codes could be generated in this fashion in various formats
+
+Below we use a public on-line example with a URL embedding an identifier for a bird.
+
+```{r}
+library(qrcode)
+identifier <- "3c42a44c-096a-445d-b574-22297e96373d"
+tgt <- paste0("https://birds.dina-web.net/species/", identifier, ".html")
+```
+
+The QR codes below lead to "`r tgt`".
+
+A smaller variant:
+
+```{r, echo=FALSE, cache=FALSE, fig.width=2, fig.height=2, dpi = 150, out.width="300px", out.height="300px"}
+qrcode_gen(tgt, ErrorCorrectionLevel = "H", bColor = "Green4")
+```
+
+The same thing slightly larger:
+
+```{r, echo=FALSE, cache=FALSE, fig.width=3, fig.height=3, dpi= 150, out.width="600px", out.height="600px"}
+qrcode_gen(tgt, ErrorCorrectionLevel = "H", bColor = "Green4")
+```
+
+## Automated parameterized reports
+
+Reports written in markdown format can be parameterized and then generated automatically. 
+
+```{r eval=FALSE}
+# assumes a markdown report template exists with name "docx-report.Rmd"
+# generates output in Word format with a specific value provided for
+# the paramterized reports parameter(s)
+
+rmarkdown::render("docx-report.Rmd", output_file = "example-01.docx", 
+  params = list(target = "birds.dina-web.net/species/"))
+
+# inspect results using the default app for .docx files
+system2("xdg-open", "~/example-01.docx")
+```
+
+## Embedding `dinar` calls within ODF documents
+
+Existing Open Document files can be used as report templates by embedding `dinar` calls using a special syntax. 
+
+Here is an example of how a report template in ODT format can be "woven" into a report, embedding `dinar` calls to fetch data from DINA-Web:
+
+```{r eval=FALSE}
+library(odfWeave)
+
+# render the report
+odfWeave(file = "~/example.odt", dest = "~/example02.odt")
+
+# display it
+system2("xdg-open", "~/example01.odt")
+```
+
+Although this is possible, it seems to be for the brave and a better approach is probably to use markdown in the report templates.

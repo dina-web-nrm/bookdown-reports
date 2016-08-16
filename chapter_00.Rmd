@@ -1,0 +1,38 @@
+# Getting DINA-Web data with `dinar`
+
+Before reading or creating data in DINA-Web, authentication is required.
+
+## Authentication in `dinar`
+
+Before being able to access data, authentication is required.
+
+```{r eval=FALSE}
+
+library(dinar)
+
+# use your provided credentials to DINA-Web
+authenticated <- dw_login("reporter", "markus")
+
+```
+
+## Reading data
+
+You can then proceed to fetch data from the DINA-Web APIs:
+
+```{r eval=FALSE}
+
+if (authenticated) {
+  
+  # listing available collections
+  colls <- dw_get_collections()
+  print(colls$collectionName)
+  
+  # listing other types of DINA-Web data
+  dw_get_institutions()
+  dw_get_division()
+  dw_get_disciplines()
+
+}
+
+```
+
