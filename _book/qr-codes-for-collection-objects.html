@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Reports for DINA-Web</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Reports for DINA-Web">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Reports for DINA-Web" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Reports for DINA-Web" />
+  
+  
+  
+
+<meta name="author" content="Roger Wilco">
+
+<meta name="date" content="2016-07-26">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="getting-dina-web-data-with-dinar.html">
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Reporting in DINA-Web using markdown</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#compiling-books-with-bookdown"><i class="fa fa-check"></i><b>1.1</b> Compiling books with bookdown</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#writing-journal-articles-etc"><i class="fa fa-check"></i><b>1.2</b> Writing journal articles etc</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#more-details"><i class="fa fa-check"></i><b>1.3</b> More details</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="getting-dina-web-data-with-dinar.html"><a href="getting-dina-web-data-with-dinar.html"><i class="fa fa-check"></i><b>2</b> Getting DINA-Web data with <code>dinar</code></a><ul>
+<li class="chapter" data-level="2.1" data-path="getting-dina-web-data-with-dinar.html"><a href="getting-dina-web-data-with-dinar.html#authentication-in-dinar"><i class="fa fa-check"></i><b>2.1</b> Authentication in <code>dinar</code></a></li>
+<li class="chapter" data-level="2.2" data-path="getting-dina-web-data-with-dinar.html"><a href="getting-dina-web-data-with-dinar.html#reading-data"><i class="fa fa-check"></i><b>2.2</b> Reading data</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="qr-codes-for-collection-objects.html"><a href="qr-codes-for-collection-objects.html"><i class="fa fa-check"></i><b>3</b> QR codes for Collection Objects</a><ul>
+<li class="chapter" data-level="3.1" data-path="qr-codes-for-collection-objects.html"><a href="qr-codes-for-collection-objects.html#automated-parameterized-reports"><i class="fa fa-check"></i><b>3.1</b> Automated parameterized reports</a></li>
+<li class="chapter" data-level="3.2" data-path="qr-codes-for-collection-objects.html"><a href="qr-codes-for-collection-objects.html#embedding-dinar-calls-within-odf-documents"><i class="fa fa-check"></i><b>3.2</b> Embedding <code>dinar</code> calls within ODF documents</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reports for DINA-Web</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="qr-codes-for-collection-objects" class="section level1">
+<h1><span class="header-section-number">3</span> QR codes for Collection Objects</h1>
+<p>A QR code can lead to any URL. For sets of Collection Objects with known identifiers - provided from <code>dinar</code>, etiquettes and labels with QR codes could be generated in this fashion in various formats</p>
+<p>Below we use a public on-line example with a URL embedding an identifier for a bird.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(qrcode)
+identifier &lt;-<span class="st"> &quot;3c42a44c-096a-445d-b574-22297e96373d&quot;</span>
+tgt &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;https://birds.dina-web.net/species/&quot;</span>, identifier, <span class="st">&quot;.html&quot;</span>)</code></pre></div>
+<p>The QR codes below lead to “<a href="https://birds.dina-web.net/species/3c42a44c-096a-445d-b574-22297e96373d.html" class="uri">https://birds.dina-web.net/species/3c42a44c-096a-445d-b574-22297e96373d.html</a>”.</p>
+<p>A smaller variant:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-5-1.png" width="300px" height="300px" /></p>
+<p>The same thing slightly larger:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-6-1.png" width="600px" height="600px" /></p>
+<div id="automated-parameterized-reports" class="section level2">
+<h2><span class="header-section-number">3.1</span> Automated parameterized reports</h2>
+<p>Reports written in markdown format can be parameterized and then generated automatically.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># assumes a markdown report template exists with name &quot;docx-report.Rmd&quot;</span>
+<span class="co"># generates output in Word format with a specific value provided for</span>
+<span class="co"># the paramterized reports parameter(s)</span>
+
+rmarkdown::<span class="kw">render</span>(<span class="st">&quot;docx-report.Rmd&quot;</span>, <span class="dt">output_file =</span> <span class="st">&quot;example-01.docx&quot;</span>, 
+  <span class="dt">params =</span> <span class="kw">list</span>(<span class="dt">target =</span> <span class="st">&quot;birds.dina-web.net/species/&quot;</span>))
+
+<span class="co"># inspect results using the default app for .docx files</span>
+<span class="kw">system2</span>(<span class="st">&quot;xdg-open&quot;</span>, <span class="st">&quot;~/example-01.docx&quot;</span>)</code></pre></div>
+</div>
+<div id="embedding-dinar-calls-within-odf-documents" class="section level2">
+<h2><span class="header-section-number">3.2</span> Embedding <code>dinar</code> calls within ODF documents</h2>
+<p>Existing Open Document files can be used as report templates by embedding <code>dinar</code> calls using a special syntax.</p>
+<p>Here is an example of how a report template in ODT format can be “woven” into a report, embedding <code>dinar</code> calls to fetch data from DINA-Web:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(odfWeave)
+
+<span class="co"># render the report</span>
+<span class="kw">odfWeave</span>(<span class="dt">file =</span> <span class="st">&quot;~/example.odt&quot;</span>, <span class="dt">dest =</span> <span class="st">&quot;~/example02.odt&quot;</span>)
+
+<span class="co"># display it</span>
+<span class="kw">system2</span>(<span class="st">&quot;xdg-open&quot;</span>, <span class="st">&quot;~/example01.odt&quot;</span>)</code></pre></div>
+<p>Although this is possible, it seems to be for the brave and a better approach is probably to use markdown in the report templates.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="getting-dina-web-data-with-dinar.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
